@@ -1,0 +1,328 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik:wght@700&display=swap');
+html { font-family: 'Inter', sans-serif; }
+*{
+    box-sizing: border-box;
+}
+@keyframes movingGradient{
+    0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+
+}
+body{
+    font-family: 'Rubik','Courier New', Courier, monospace;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    /* animation: movingGradient 15s ease infinite; */
+    background: #1F2937;
+}
+
+.container{
+    position: relative;
+    width: 550px;
+    height: 550px;
+    left: 0px;
+    /* background: #1F2937; */
+    background: linear-gradient(180deg, #04553a, #1A3C40, rgb(107, 156, 189));
+    background-size: 205% 200%;
+    animation: movingGradient 18s ease infinite alternate;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+h1{
+    position: absolute;
+    width: 354px;
+    height: 80px;
+    left: 52px;
+    top: 60px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+    letter-spacing: -0.025em;
+    /* white */
+    color: #FFFFFF;
+}
+
+.green-h1{
+    color: #10B981;
+    transition: color 1.5s ease;
+}
+.supp-text{
+    position: absolute;
+    width: 372px;
+    height: 28px;
+    left: 52px;
+    top: 160px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.length{
+    position: absolute;
+    width: 140px;
+    height: 28px;
+    left: 260px;
+    top: 236px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    background: rgba(0, 0, 0, 0);
+    /* border: black solid 0px 0px 2px 0px; */
+    border: 0;
+    -webkit-appearance: none;
+    border-bottom: #b8e4d5 solid 2px;
+    color: #b8e4d5;
+    white-space: nowrap;
+}
+.length:focus, .length:active{
+    outline: none;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    border: 0;
+    position: absolute;
+    width: 223px;
+    height: 42px;
+    left: 52px;
+    top: 287px;
+    cursor: pointer;
+    background: #10B981;
+    /* shadow/sm */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+.btn:focus, .btn:active{
+    outline: none;
+}
+.btn-text{
+    position: static;
+    width: 159px;
+    height: 24px;
+    left: 47px;
+    top: 9px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px 0px 12px;
+    transition: color 0.5s ease;
+}
+.btn:active{
+    transform: scale(0.97);
+}
+.btn:hover .btn-text{
+    color: #273549;
+}
+
+.bolt{
+    position: absolute;
+    left: 8px;
+    right: 191px;
+    top: 12px;
+    bottom: 12px;
+    transition: color 0.5s ease;
+    /* background: #FFFFFF; */
+}
+.invalid-alert{
+    position: absolute;
+    width: 372px;
+    height: 28px;
+    left: 56px;
+    top: 320px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #c20000;
+}
+.line{
+    position: absolute;
+    width: 446px;
+    height: 0px;
+    left: 52px;
+    top: 364px;
+    
+    border: 1px solid #2F3E53;
+}
+
+.field1{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 42px;
+    top: 399px;
+    border: 0;
+    background: #273549;
+    border-radius: 6px;
+/* input value style */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    text-align: center;
+    
+    color: #55F991;
+    /* show only limited text if user chooses a huge length */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.field2{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 297px;
+    top: 399px;
+    border: 0;
+    background: #273549;
+    border-radius: 6px;
+    /* input value style */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    text-align: center;
+    
+    color: #55F991;
+    /* show only limited text if user chooses a huge length */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.field3{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 42px;
+    top: 465px;
+    border: 0;
+    background: #273549;
+    border-radius: 6px;
+    /* input value style */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    text-align: center;
+    
+    color: #55F991;
+    /* show only limited text if user chooses a huge length */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.field4{
+    position: absolute;
+    width: 211px;
+    height: 39px;
+    left: 297px;
+    top: 465px;
+    border: 0;
+    background: #273549;
+    border-radius: 6px;
+    /* input value style */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    text-align: center;
+    
+    color: #55F991;
+    /* show only limited text if user chooses a huge length */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.copy1{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 248px;
+    top: 399px;
+    border: #fff solid 1px;
+    background: #273549;
+    color: #fff;
+    cursor: pointer; 
+}
+.copy2{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 489px;
+    top: 399px;
+    border: #fff solid 1px;
+    background: #273549; 
+    color: #fff;
+    cursor: pointer; 
+}
+.copy3{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 248px;
+    top: 465px;
+    border: #fff solid 1px;
+    background: #273549;
+    color: #fff;
+    cursor: pointer; 
+}
+.copy4{
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: 489px;
+    top: 465px;
+    border: #fff solid 1px;
+    background: #273549; 
+    color: #fff;
+    cursor: pointer; 
+}
