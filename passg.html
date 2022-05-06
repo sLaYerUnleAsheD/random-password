@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/passg.css">
+    <script src="https://kit.fontawesome.com/55a9de83c3.js" crossorigin="anonymous"></script>
+    <title>Random Passwords</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="white-h1">Generate a </span>
+            <span class="green-h1">random password</span>
+        </h1>
+        <p class="supp-text">
+            Never use an insecure password again.
+        </p>
+        <p class="supp-text" style="top:215px; color:#b8e4d5;">Length of password:</p>
+        <input type="number" class="length" min="8" max="127" value="8">
+        <button class="btn" onclick="randomizePassword(document.querySelector('.length').value)">
+            <p class="btn-text">Generate passwords</p>
+            <img src="images/Lightning bolt.png" alt="Lightning" class="bolt">
+        </button>
+        <p class="invalid-alert"></p>
+        <hr class="line">
+        <input type="text" class="field1" disabled>
+        <button class="copy1"  title="Copy to clipboard"><i class="fa fa-clipboard"></i></button>
+        <input type="text" class="field2" disabled> 
+        <button class="copy2"  title="Copy to clipboard"><i class="fa fa-clipboard"></i></button>
+        <input type="text" class="field3" disabled>
+        <button class="copy3"  title="Copy to clipboard"><i class="fa fa-clipboard"></i></button>
+        <input type="text" class="field4" disabled>
+        <button class="copy4"  title="Copy to clipboard"><i class="fa fa-clipboard"></i></button>
+    </div>
+    <script src="js/passg.js"></script>
+</body>
+</html>
