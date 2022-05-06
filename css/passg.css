@@ -330,6 +330,9 @@ input::-webkit-inner-spin-button {
 @media screen and (max-width: 414px){
     body{
         overflow: hidden;
+        background: linear-gradient(180deg, #04553a, #1A3C40, rgb(107, 156, 189));
+        background-size: 205% 200%;
+        animation: movingGradient 14s ease infinite alternate;
     }
     .container{
         width: 100vw;
@@ -337,6 +340,9 @@ input::-webkit-inner-spin-button {
         left: 50%;
         transform: translateX(-50%);
         height: 100vh;
+        background: rgba(0, 0, 0, 0);
+        border-image: none;
+        border: 0;
     }
     .line{
         width: 330px;
